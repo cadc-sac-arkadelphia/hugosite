@@ -1,0 +1,3 @@
+[submodule "website/cadc-sac-arkadelphia/content/director-arkadelphia"]
+	path = website/cadc-sac-arkadelphia/content/director-arkadelphia
+	url = https://github.com/cadc-sac-arkadelphia/director-arkadelphia
