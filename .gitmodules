@@ -4,3 +4,6 @@
 [submodule "website/cadc-sac-arkadelphia/public"]
 	path = website/cadc-sac-arkadelphia/public
 	url = https://github.com/cadc-sac-arkadelphia/cadc-sac-arkadelphia.github.io
+[submodule "website/cadc-sac-arkadelphia/themes/cadc-sac"]
+	path = website/cadc-sac-arkadelphia/themes/cadc-sac
+	url = https://github.com/cadc-sac-arkadelphia/cadc-sac
