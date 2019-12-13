@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
-// ColorTheme.go                                                               /
+// ColorBlind.go                                                               /
 //                                                                             /
 // by david                                                                    /
-// on 12/9/19, 6:00 PM                                                         /
+// on 12/13/19, 8:20 AM                                                        /
 // for hugosite                                                                /
 //                                                                             /
 // Copyright © 2019. Davsk Ltd. Co.                                            /
@@ -27,22 +27,21 @@
 // DEALINGS IN THE SOFTWARE.                                                   /
 ////////////////////////////////////////////////////////////////////////////////
 
-// Package ColorTheme provides the ColorTheme type for the DavskIo interface.
 package ColorTheme
 
-// Type ColorTheme is the structure for defining our apps color theme
-// as selected by user consistent with branding and psychology.
-type ColorTheme struct {
-	ColorMode  ColorMode
-	ColorBlind ColorBlind
-}
+// Type colorBlind is a local enum list of colorBlind options.
+type ColorBlind int
 
-// Func NewColorTheme returns a pointer to a new ColorTheme with default values.
-func NewColorTheme() *ColorTheme {
-	return &ColorTheme{LightMode, Normal}
-}
+const (
+	Normal        ColorBlind = iota
+	Achromatopsia ColorBlind = iota
+	Protanopia    ColorBlind = iota
+	Deuteranopia  ColorBlind = iota
+	Tritanopia    ColorBlind = iota
+	Protanomaly   ColorBlind = iota
+	Deuteranomaly ColorBlind = iota
+	Tritanomaly   ColorBlind = iota
+)
 
-// Func String returns a text representation of the ColorTheme.
-func (ct *ColorTheme) String() string {
-	return "ColorTheme{ColorMode: " + ColorMode.String(ct.ColorMode) + ", ColorBlind: " + ColorBlind.String(ct.ColorBlind) + "}"
-}
+// Install 'go get -u golang.org/x/tools/...' if stringer is not found.
+//go:generate stringer -type=ColorBlind
