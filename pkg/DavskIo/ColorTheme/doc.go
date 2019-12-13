@@ -27,15 +27,16 @@
 // DEALINGS IN THE SOFTWARE.                                                   /
 ////////////////////////////////////////////////////////////////////////////////
 
-// Package ColorTheme defines standard options for DavskApps for console, gui, print, etc.
+// Package ColorTheme defines standard options for DavskApps for console, gui,
+// print, etc.
 //
 // Overview
 //
 // When an app begins, a new default ColorTheme will be created,
 //
 // ColorTheme options may then be loaded from local or cloud profile
-// or the user may select the options using DavskIo, from the console, gui, web or other interface,
-// with the option of saving changes to local and or cloud.
+// or the user may select the options using DavskIo, from the console, gui, web
+// or other interface, // with the option of saving changes to local and or cloud.
 //
 // ColorTheme will then be used by DavskIo interface to provide appropriate colors
 // for specific uses that accommodate the options selected.
@@ -45,10 +46,11 @@
 // ColorTheme should only be used by the implementation of DavskIo interface
 // and should be altered directly within the app.
 //
-// The programmer should avoid specifying colors directly, but should specify specific color sets within the theme
-// when using the DavskIo interface. So a PostItNote may mean Yellow, ErrorMsg may mean Red, InfoNote may mean Blue,
-// but the programmer does not choose the color as the color needs to accommodate the hardware and user requirements
-// and comply with branding.
+// The programmer should avoid specifying colors directly, but should specify
+// specific color sets within the theme when using the DavskIo interface.
+// So a PostItNote may mean Yellow, ErrorMsg may mean Red, InfoNote may mean Blue,
+// but the programmer does not choose the color as the color needs to accommodate
+// the hardware and user requirements and comply with branding.
 //
 // Copyright © 2019. Davsk Ltd. Co.                                            /
 // All Rights Reserved. Licensed under the MIT License.
