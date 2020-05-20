@@ -39,3 +39,4 @@ const (
 
 // Install 'go get -u golang.org/x/tools/...' if stringer is not found.
 //go:generate stringer -type=ColorMode
+ &&
